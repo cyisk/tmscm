@@ -1,0 +1,38 @@
+
+\begin{table}[t]
+\caption{Write your description here.}
+\label{sample-table}
+\vskip 0.15in
+\begin{center}
+\begin{small}
+\begin{sc}
+\begin{tabular}{llcccccccc}
+\toprule
+ &  & \multicolumn{3}{c}{ER-Diag-50} & \multicolumn{3}{c}{ER-Tril-50} \\
+      \cmidrule(lr){3-5}                \cmidrule(lr){6-8}
+Method &  & Obs$_{\text{WD}}$ & Ctf$_{\text{RMSE}}$ & Ctf$_{\text{WD}}$ & Obs$_{\text{WD}}$ & Ctf$_{\text{RMSE}}$ & Ctf$_{\text{WD}}$ \\
+\midrule
+\multirow{3}{*}{DNME} & -     & \textbf{3.47}$_{\pm \mathbf{0.53}}$ & \textbf{0.53}$_{\pm \mathbf{0.05}}$ & \textbf{1.50}$_{\pm \mathbf{0.28}}$ & 21.28$_{\pm 22.09}$ & \textbf{0.51}$_{\pm \mathbf{0.12}}$ & \textbf{3.37}$_{\pm \mathbf{3.05}}$ & \\
+                             & w/o O & 5.06$_{\pm 1.75}$ & 0.78$_{\pm 0.05}$ & 2.88$_{\pm 0.43}$ & 25.42$_{\pm 21.27}$ & 0.89$_{\pm 0.10}$ & 4.79$_{\pm 3.03}$ & \\
+                             & w/o M & 4.35$_{\pm 0.77}$ & 0.62$_{\pm 0.04}$ & 1.98$_{\pm 0.30}$ & \textbf{18.53}$_{\pm \mathbf{24.04}}$ & 0.58$_{\pm 0.10}$ & 3.60$_{\pm 3.04}$ & \\
+\midrule
+\multirow{3}{*}{TNME} & -     & 4.65$_{\pm 2.93}$ & \textbf{0.47}$_{\pm \mathbf{0.05}}$ & \textbf{1.32}$_{\pm \mathbf{0.29}}$ & \textbf{3.34}$_{\pm \mathbf{3.17}}$ & \textbf{0.55}$_{\pm \mathbf{0.12}}$ & \textbf{3.49}$_{\pm \mathbf{3.05}}$ & \\
+                             & w/o O & 5.40$_{\pm 2.55}$ & 11.24$_{\pm 20.98}$ & 3.47$_{\pm 1.08}$ & 23.75$_{\pm 29.53}$ & 6.41$_{\pm 9.84}$ & 37.11$_{\pm 45.91}$ & \\
+                             & w/o M & \textbf{3.88}$_{\pm \mathbf{0.65}}$ & 0.62$_{\pm 0.04}$ & 2.08$_{\pm 0.33}$ & 5.57$_{\pm 3.27}$ & 0.73$_{\pm 0.21}$ & 13.60$_{\pm 19.84}$ & \\
+\midrule
+\multirow{4}{*}{CMSM} & -     & 15.70$_{\pm 23.20}$ & \textbf{0.37}$_{\pm \mathbf{0.05}}$ & \textbf{0.96}$_{\pm \mathbf{0.23}}$ & \textbf{9.78}$_{\pm \mathbf{9.87}}$ & \textbf{0.42}$_{\pm \mathbf{0.12}}$ & 3.17$_{\pm 3.07}$ & \\
+                             & w/o O & 41.74$_{\pm 45.13}$ & 2.64$_{\pm 3.72}$ & 2.91$_{\pm 0.44}$ & 36.65$_{\pm 30.28}$ & 2.12$_{\pm 2.49}$ & 4.69$_{\pm 3.08}$ & \\
+                             & w/o M & 8.00$_{\pm 9.88}$ & 1.69$_{\pm 2.60}$ & 1.20$_{\pm 0.35}$ & 10.39$_{\pm 10.56}$ & 0.75$_{\pm 0.49}$ & 7.79$_{\pm 8.34}$ & \\
+                             & w/o T & \textbf{3.74}$_{\pm \mathbf{1.09}}$ & 0.64$_{\pm 0.05}$ & 2.47$_{\pm 0.51}$ & 23.36$_{\pm 36.32}$ & 1.25$_{\pm 1.29}$ & \textbf{2.89}$_{\pm \mathbf{1.33}}$ & \\
+\midrule
+\multirow{4}{*}{TVSM} & -     & 3.66$_{\pm 1.05}$ & \textbf{0.46}$_{\pm \mathbf{0.05}}$ & \textbf{1.29}$_{\pm \mathbf{0.28}}$ & \textbf{3.40}$_{\pm \mathbf{2.01}}$ & \textbf{0.50}$_{\pm \mathbf{0.12}}$ & 3.35$_{\pm 2.99}$ & \\
+                             & w/o O & 5.25$_{\pm 2.31}$ & 0.79$_{\pm 0.04}$ & 2.89$_{\pm 0.43}$ & 11.79$_{\pm 10.36}$ & 0.88$_{\pm 0.10}$ & 4.68$_{\pm 3.03}$ & \\
+                             & w/o M & \textbf{3.54}$_{\pm \mathbf{0.53}}$ & 0.53$_{\pm 0.05}$ & 1.63$_{\pm 0.29}$ & 4.25$_{\pm 4.82}$ & 0.53$_{\pm 0.11}$ & \textbf{3.33}$_{\pm \mathbf{3.00}}$ & \\
+                             & w/o T & 22.22$_{\pm 36.74}$ & 0.67$_{\pm 0.05}$ & 2.43$_{\pm 0.49}$ & 14.30$_{\pm 15.34}$ & 0.78$_{\pm 0.12}$ & 6.63$_{\pm 3.87}$ & \\
+\bottomrule
+\end{tabular}
+\end{sc}
+\end{small}
+\end{center}
+\vskip -0.1in
+\end{table}

@@ -1,0 +1,70 @@
+dataset:
+  name: ${dataset}
+  train:
+    batch_size: 256
+    num_workers: 23
+    shuffle: True
+  val:
+    batch_size: -1
+    num_workers: 23
+  test:
+    batch_size: -1
+    num_workers: 23
+    
+model:
+  exogenous_distribution:
+    type: ${exogenous_distribution}
+    markovian: ${markovian}
+    hidden_features:
+      - 128
+      - 128
+  solution_mapping:
+    type: ${solution_mapping}
+    causal_ordered: ${causal_ordered}
+    triangular: ${triangular}
+    hidden_features:
+      - 128
+      - 128
+    width: auto
+    max_params: 512K
+    max_width: 1024
+  optimizer:
+    lr: 0.001
+    weight_decay: 0.01
+
+scheduler:
+  trainer:
+    accelerator: gpu
+    max_epochs: 100
+    logger: False
+  val_scheduler:
+    initial: True
+    interval: 1
+    interval_unit: step
+    interval_mul: 1.25
+    max_interval_unit: epoch
+    max_interval: 1
+    filename: 'val-result.csv'
+    format: csv
+  checkpoint_scheduler:
+    monitor: ctf_rmse
+    mode: min
+    filename: '{epoch}-{ctf_rmse:.2f}'
+  test_scheduler:
+    filename: 'test-result.csv'
+    format: csv
+
+pipeline:
+  work_dirpath: 'experiments/tmscm_sym/${experiment_name}/${experiment_flag}'
+  run_subdirpath: '${seed}'
+  run_seeds:
+  - 41017231
+  - 62988193
+  - 70119289
+  - 10298297
+  - 70121407
+  - 61743257
+  - 94231861
+  - 10443463
+  - 35012633
+  - 60896959
