@@ -1,9 +1,9 @@
-[![arXiv](https://img.shields.io/badge/arXiv-2505.xxxxx-b31b1b.svg)](.)
-[![Venue](https://img.shields.io/badge/venue-ICML_2025-darkblue)](.)
+[![arXiv](https://img.shields.io/badge/arXiv-2505.02212-b31b1b.svg)]([.](https://arxiv.org/abs/2505.02212))
+[![Venue](https://img.shields.io/badge/venue-ICML_2025-darkblue)](https://arxiv.org/abs/2505.02212)
 
 # Exogenous Isomorphism for Counterfactual Identifiability
 
-This repository contains the complete code for "[Exogenous Isomorphism for Counterfactual Identifiability](.) [ICML 25 Spotlight]".
+This repository contains the complete code for "[Exogenous Isomorphism for Counterfactual Identifiability](https://arxiv.org/abs/2505.02212) [ICML 25 Spotlight]".
 
 ## Requirements
 
@@ -37,7 +37,14 @@ Then you can find figures and tables in `script/graphics/`. Note that you may ne
 
 ## Citation
 
-Pending...
-
 ```bib
+@misc{chen2025exogenousisomorphismcounterfactualidentifiability,
+    title={Exogenous Isomorphism for Counterfactual Identifiability}, 
+    author={Yikang Chen and Dehui Du},
+    year={2025},
+    eprint={2505.02212},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG},
+    url={https://arxiv.org/abs/2505.02212}, 
+}
 ```
